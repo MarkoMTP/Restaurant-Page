@@ -4,7 +4,7 @@ console.log('God Is Great, He Will Make 2024 The Greatest Year Of My Life');
 
     const container = document.querySelector("#container");
 
-
+//this is the header
 const header = document.createElement("div");
 header.setAttribute("id", "header");
 const h1Header = document.createElement("h1")
@@ -35,6 +35,46 @@ ul.appendChild(li3)
 header.appendChild(ul)
 
 container.appendChild(header)
+
+//img background
+
+const backgroundImg = document.createElement("div");
+backgroundImg.setAttribute("id", "back")
+
+container.appendChild(backgroundImg)
+
+//content 
+
+const content = document.createElement("div");
+content.setAttribute("id", "content")
+
+const h1Content = document.createElement("h1");
+h1Content.textContent = "Come on down for some delicious cuisine!"
+
+content.appendChild(h1Content);
+
+const h4Content = document.createElement("h4")
+h4Content.textContent = "Tasty and affordable!";
+
+content.appendChild(h4Content);
+
+const homePgBtn = document.createElement("button");
+homePgBtn.classList.add('myButton')
+homePgBtn.textContent = "Order Now";
+
+content.appendChild(homePgBtn);
+
+const adressa = document.createElement("p");
+adressa.textContent = "Ulica Antuna Mihanovica 50b";
+content.appendChild(adressa);
+
+const WorkTime = document.createElement("p");
+WorkTime.textContent = "Mon-Sat: 8am-8pm";
+
+content.appendChild(WorkTime);
+
+container.appendChild(content)
+
     
 
     
