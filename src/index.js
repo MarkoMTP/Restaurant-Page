@@ -1,8 +1,14 @@
 console.log('God Is Great, He Will Make 2024 The Greatest Year Of My Life');
 
+import addAll from "./homepage";
+import addAllMenu from "./menu";
 
 
-    const container = document.querySelector("#container");
+
+const container = document.querySelector("#container");
+
+const content = document.createElement("div");
+container.appendChild(content)
 
 //this is the header
 const header = document.createElement("div");
@@ -19,19 +25,43 @@ const li1 =  document.createElement("li")
 li1.classList.add("tab");
 li1.textContent = "Home"
 
-ul.appendChild(li1)
+li1.addEventListener("click", () => {
+    content.setAttribute("id", "content")
+
+    li2.style.color = '';
+    li2.style.fontSize = '100%';
+    li1.style.color = 'red';
+    li1.style.fontSize = '140%';
+    li3.style.color = '';
+    li3.style.fontSize = '100%';
+
+
+    addAll()
+})
+
 
 const li2 =  document.createElement("li")
 li2.classList.add("tab");
 li2.textContent = "Menu"
-
-ul.appendChild(li2) 
+li2.addEventListener('click', () => {
+content.setAttribute("id", "content")
+    li1.style.color = '';
+    li1.style.fontSize = '100%';
+    li2.style.color = 'red';
+    li2.style.fontSize = '140%';
+    li3.style.color = '';
+    li3.style.fontSize = '100%';
+    addAllMenu()
+})
 
 const li3 =  document.createElement("li")
 li3.classList.add("tab");
 li3.textContent = "Contact"
-ul.appendChild(li3)
 
+
+ul.appendChild(li1)
+ul.appendChild(li2) 
+ul.appendChild(li3)
 header.appendChild(ul)
 
 container.appendChild(header)
@@ -41,44 +71,12 @@ container.appendChild(header)
 const backgroundImg = document.createElement("div");
 backgroundImg.setAttribute("id", "back")
 
-container.appendChild(backgroundImg)
+container.appendChild(backgroundImg);
 
-//content 
+  
 
-const content = document.createElement("div");
-content.setAttribute("id", "content")
 
-const h1Content = document.createElement("h1");
-h1Content.textContent = "Come on down for some delicious cuisine!"
-
-content.appendChild(h1Content);
-
-const h4Content = document.createElement("h4")
-h4Content.textContent = "Tasty and affordable!";
-
-content.appendChild(h4Content);
-
-const homePgBtn = document.createElement("button");
-homePgBtn.classList.add('myButton')
-homePgBtn.textContent = "Order Now";
-
-content.appendChild(homePgBtn);
-
-const adressa = document.createElement("p");
-adressa.textContent = "Ulica Antuna Mihanovica 50b";
-content.appendChild(adressa);
-
-const WorkTime = document.createElement("p");
-WorkTime.textContent = "Mon-Sat: 8am-8pm";
-
-content.appendChild(WorkTime);
-
-container.appendChild(content)
 
     
 
-    
-
-    
-
-    
+  
