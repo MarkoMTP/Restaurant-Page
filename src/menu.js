@@ -18,7 +18,7 @@ export default function addAllMenu () {
     content.appendChild(h1Content);
 
 const namePizza = document.createElement("h2")
-     namePizza.textContent = "Reflexive Booster Pizza"
+     namePizza.textContent = " Pizza"
      content.appendChild(namePizza) 
 
     const PizzaDiv = document.createElement("div");
@@ -38,7 +38,7 @@ const namePizza = document.createElement("h2")
     
    
     const nameDrink = document.createElement("h2")
-    nameDrink.textContent = "Reflex Booster"
+    nameDrink.textContent = "Champagne"
      content.appendChild(nameDrink) 
     const drinkDiv = document.createElement("div");
     drinkDiv.classList.add("pizzaDiv")

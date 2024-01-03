@@ -14,7 +14,7 @@ container.appendChild(content)
 const header = document.createElement("div");
 header.setAttribute("id", "header");
 const h1Header = document.createElement("h1")
-h1Header.textContent = "Goran's Get Sexy Lounge";
+h1Header.textContent = "Expensive Lounge";
 
 header.appendChild(h1Header);
 

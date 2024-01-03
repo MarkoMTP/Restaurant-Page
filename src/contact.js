@@ -19,7 +19,7 @@ content.appendChild(h4Content);
 const h4ContentN = document.createElement("h4")
 h4ContentN.textContent = "09554429391";
 
-content.appendChild(h4Content);
+content.appendChild(h4ContentN);
 
 const adressa = document.createElement("p");
 adressa.textContent = "Ulica Antuna Mihanovica 50b";
