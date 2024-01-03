@@ -11,7 +11,7 @@ h1Content.textContent = "Come on down for some delicious cuisine!"
 
 content.appendChild(h1Content);
 
-const h4Content = document.createElement("h4")
+const h4Content = document.createElement("h2")
 h4Content.textContent = "Tasty and affordable!";
 
 content.appendChild(h4Content);
@@ -22,11 +22,8 @@ homePgBtn.textContent = "Order Now";
 
 content.appendChild(homePgBtn);
 
-const adressa = document.createElement("p");
-adressa.textContent = "Ulica Antuna Mihanovica 50b";
-content.appendChild(adressa);
 
-const WorkTime = document.createElement("p");
+const WorkTime = document.createElement("h4");
 WorkTime.textContent = "Mon-Sat: 8am-8pm";
 
 content.appendChild(WorkTime);

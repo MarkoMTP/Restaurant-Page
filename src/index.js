@@ -2,7 +2,7 @@ console.log('God Is Great, He Will Make 2024 The Greatest Year Of My Life');
 
 import addAll from "./homepage";
 import addAllMenu from "./menu";
-
+import addContact from "./contact";
 
 
 const container = document.querySelector("#container");
@@ -57,7 +57,17 @@ content.setAttribute("id", "content")
 const li3 =  document.createElement("li")
 li3.classList.add("tab");
 li3.textContent = "Contact"
-
+li3.addEventListener('click', () => {
+    content.setAttribute("id", "content")
+        li1.style.color = '';
+        li1.style.fontSize = '100%';
+        li3.style.color = 'red';
+        li3.style.fontSize = '140%';
+        li2.style.color = '';
+        li2.style.fontSize = '100%';
+        addContact()
+    })
+    
 
 ul.appendChild(li1)
 ul.appendChild(li2) 

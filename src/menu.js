@@ -38,7 +38,7 @@ const namePizza = document.createElement("h2")
     
    
     const nameDrink = document.createElement("h2")
-    nameDrink.textContent = "Reflexive Booster Pizza"
+    nameDrink.textContent = "Reflex Booster"
      content.appendChild(nameDrink) 
     const drinkDiv = document.createElement("div");
     drinkDiv.classList.add("pizzaDiv")
