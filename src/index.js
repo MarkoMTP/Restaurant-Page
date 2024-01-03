@@ -1,4 +1,3 @@
-console.log('God Is Great, He Will Make 2024 The Greatest Year Of My Life');
 
 import addAll from "./homepage";
 import addAllMenu from "./menu";
