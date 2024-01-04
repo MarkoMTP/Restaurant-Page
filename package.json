@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "push": "git subtree push --prefix dist origin gh-pages",
     "build": "webpack"
   },
   "keywords": [],
